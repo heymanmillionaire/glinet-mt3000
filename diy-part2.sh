@@ -14,8 +14,8 @@
 # sed -i 's/192.168.1.1/192.168.3.1/g' package/base-files/files/bin/config_generate
 
 # Modify default theme
-# sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-theme-argon.git package/luci-theme-argon
+sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+#git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-theme-argon.git package/luci-theme-argon
 # sed -i '$a\src-git argon https://github.com/immortalwrt/luci/tree/master/themes/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 # Modify hostname
 # sed -i 's/OpenWrt/OpenWrt/g' package/base-files/files/bin/config_generate
