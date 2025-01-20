@@ -13,7 +13,7 @@
 name: Update Checker
 
 env:
-  REPO_URL: https://github.com/immortalwrt/immortalwrt/tree/openwrt-23.05 # https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/immortalwrt/immortalwrt # https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
 
 on:
