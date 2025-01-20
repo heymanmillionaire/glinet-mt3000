@@ -17,5 +17,5 @@
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # 4-添加 OpenClash 插件
-sed -i '$a\src-git openclash https://github.com/vernesong/OpenClash' ./feeds.conf.default
-sed -i '$a\src-git homeproxy https://github.com/douglarek/luci-app-homeproxy' ./feeds.conf.default
+git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
+git clone https://github.com/douglarek/luci-app-homeproxy package/luci-app-homeproxy
