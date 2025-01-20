@@ -17,5 +17,5 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 # echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 # echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # 4-添加 OpenClash 插件
-git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
-git clone https://github.com/douglarek/luci-app-homeproxy package/luci-app-homeproxy
+# git clone https://github.com/vernesong/OpenClash package/luci-app-openclash
+# git clone https://github.com/douglarek/luci-app-homeproxy package/luci-app-homeproxy
