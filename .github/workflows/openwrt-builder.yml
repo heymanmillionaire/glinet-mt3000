@@ -10,8 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Release STABLE openwrt-24.10
-#OpenWrt Builder
+name: OpenWrt Builder
 
 on:
   repository_dispatch:
@@ -19,7 +18,7 @@ on:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt.git
-  REPO_BRANCH: openwrt-24.10
+  REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -152,7 +151,7 @@ jobs:
         keep_minimum_runs: 2
 
     - name: Remove old Releases
-      uses: dev-drprasad/delete-older-releases@latest
+      uses: dev-drprasad/delete-older-releases@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
         keep_latest: 3
