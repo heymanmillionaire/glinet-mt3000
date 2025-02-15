@@ -10,7 +10,8 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder
+name: OpenWrt Release STABLE openwrt-24.10
+#OpenWrt Builder
 
 on:
   repository_dispatch:
